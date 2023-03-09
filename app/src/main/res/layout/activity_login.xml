@@ -5,7 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/login_to_signup_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginbtn"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/signup"
+        android:text="Do not have an account?\npress here"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/signin"
@@ -78,14 +90,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>
 
-    <TextView
-        android:id="@+id/others"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/socialicons"
-        android:layout_centerHorizontal="true"
-        android:text="or sign in with"
-        android:textColor="#EFEAEA" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -110,7 +115,9 @@
             android:layout_height="48dp"
             android:src="@drawable/twitterlogo"
             android:layout_margin="20dp"/>
+
     </LinearLayout>
+
 
 
 </RelativeLayout>

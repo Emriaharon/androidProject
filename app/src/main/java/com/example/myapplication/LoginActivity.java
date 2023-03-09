@@ -2,7 +2,6 @@
 
 package com.example.myapplication;
 
-import androidx.annotation.UiThread;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -11,18 +10,17 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myapplication.R;
 import com.google.android.material.button.MaterialButton;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         TextView username= (TextView) findViewById(R.id.username);
 
         TextView password= (TextView) findViewById(R.id.password);
@@ -32,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin"))
                 {
-                    Toast.makeText(MainActivity.this, "LOGIN SUCCESFULL", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "LOGIN SUCCESFULL", Toast.LENGTH_SHORT).show();
                 }
 
                 else
-                    Toast.makeText(MainActivity.this, "LOGIN Faild", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "LOGIN Faild", Toast.LENGTH_SHORT).show();
 
             }
         });
